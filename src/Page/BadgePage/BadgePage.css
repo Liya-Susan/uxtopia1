@@ -1,0 +1,287 @@
+* {
+    box-sizing: border-box;
+    --shadow-elevation-1: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+    --shadow-elevation-2: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+    --button-color: #ef5350;
+    --button-color-hover: #e57373;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#root,
+body {
+    background: #e0e0e0;
+    margin: 0;
+    font-family: 'Google Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*Newly addded*/
+#heading__text {
+    margin-top: 5rem;
+}
+
+#background__img {
+    min-height: 100%;
+    min-width: 1024px;
+
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#upload__btn {
+    background-color: #ef5350;
+    border-radius: 50px;
+    border: none;
+    margin-top: 1rem;
+    color: white;
+    padding: 0.5rem 0.7rem 0.5rem 0.7rem;
+    font-weight: 900;
+}
+
+#arrow {
+    width: 1.5rem;
+    margin-left: 0.5rem;
+}
+#uxtopia__logo {
+    width: 6rem;
+}
+.text {
+    opacity: 0.8;
+}
+@media only screen and (max-width: 600px) {
+    /*Newly addded*/
+    #heading__text {
+        margin-top: 5rem;
+    }
+}
+
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 28px;
+}
+
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+        border-top-color: #fbbc04;
+    }
+
+    50% {
+        border-top-color: #ee675c;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        border-top-color: #2979ff;
+    }
+}
+
+body {
+    background: #e0e0e0;
+    margin: 0;
+    font-family: 'Google Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    color: #4a4a4a;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #fff;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+    z-index: 1;
+}
+
+.main-container {
+    display: flex;
+    flex: 1;
+}
+
+.input-panel {
+    padding: 24px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 420px;
+    color: #ffffff;
+    background-color: #1a1a1a;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12);
+}
+
+.input {
+    margin-bottom: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.input:last-child {
+    margin-bottom: 0;
+}
+
+.input label {
+    font-size: 13px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.button {
+    color: #fff;
+    font-size: 15px;
+    border-radius: 4px;
+    padding: 10px 12px;
+    box-shadow: var(--shadow-elevation-1);
+    background-color: var(--button-color);
+    cursor: pointer;
+    border: none;
+    transition: box-shadow 100ms ease, background-color 100ms ease;
+}
+
+.button:hover {
+    box-shadow: var(--shadow-elevation-2);
+    background-color: var(--button-color-hover);
+}
+
+.preview-panel {
+    padding: 36px 0;
+    background-color: #2196f3;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.adjust {
+    margin: 50px;
+}
+
+canvas {
+    width: 500px;
+    max-width: 80%;
+    border-radius: 10px;
+}
+
+.download-fab {
+    cursor: pointer;
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    background-color: #1a1a1a;
+    box-shadow: var(--shadow-elevation-1);
+    transition: background-color 100ms ease, box-shadow 100ms ease;
+}
+
+.download-fab:hover {
+    background-color: #333333;
+    box-shadow: var(--shadow-elevation-2);
+}
+
+@media screen and (max-width: 860px) {
+    header {
+        height: 56px;
+        font-size: 20px;
+    }
+
+    .main-container {
+        flex-direction: column;
+    }
+
+    .input-panel,
+    .preview-panel {
+        width: 100%;
+        max-width: initial;
+    }
+
+    .preview-panel {
+        padding: 24px 0 96px 0;
+        /* flex: 1; */
+    }
+
+    .input {
+        margin-bottom: 24px;
+    }
+
+    .download-fab {
+        width: 56px;
+        height: 56px;
+    }
+}
+
+.logo {
+    width: 50%;
+    bottom: 0;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 999999;
+    width: 100vw;
+    height: 100vh;
+    background: #4a4a4a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e0e0e0;
+}
+
+.overlay span {
+    display: inline-flex;
+}
+
+.overlay .lds-ring div {
+    margin: 14px;
+}
+
+.done {
+    display: none;
+}

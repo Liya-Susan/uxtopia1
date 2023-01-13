@@ -1,0 +1,256 @@
+#home__page {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./Desktop\ -\ 25.png');
+    position: relative;
+    overflow: hidden;
+}
+#navbar {
+    padding: 1rem 1rem 0 1rem;
+}
+#nav__links {
+    display: flex;
+}
+#nav__links > h5 {
+    margin-right: 3.5rem;
+}
+.desktop > h1 {
+    font-size: 3.3rem;
+}
+#navbar {
+    color: #ffff;
+}
+
+#img__logo {
+    width: 4rem;
+}
+#left__section {
+    margin-top: 4rem;
+    width: 200px;
+    display: flex;
+    height: 200px;
+    object-fit: fill;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#img__logo,
+#img__left {
+    object-fit: contain;
+}
+#right__Section {
+    padding-top: 8rem;
+    color: black;
+    font-weight: bold;
+    height: 100%;
+}
+#right__Section__text {
+    padding-right: 8rem;
+    line-height: 97.73%;
+    margin-top: -1rem;
+}
+
+#right__Section__text > h1 {
+    line-height: 0.8;
+
+    font-weight: 700 !important;
+    font-size: 3rem !important;
+}
+#left__section > img {
+    object-fit: contain;
+    height: 25rem;
+    pointer-events: none;
+    margin-right: 1rem !important;
+}
+#grab__spot__btn {
+    margin-top: 3rem;
+    font-size: 46px;
+}
+
+#left__right__group {
+    margin-top: 3rem;
+}
+#left__section > img {
+    object-fit: contain;
+    height: 30rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+}
+
+@media only screen and (max-width: 994px) {
+    #right__Section__text h1 {
+        line-height: 0.8;
+
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
+    #right__Section__text {
+        padding-right: 0rem;
+    }
+    #left__section {
+        margin-top: 3rem;
+
+        width: 200px;
+        display: flex;
+        height: 200px;
+        object-fit: fill;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+}
+#left__section > img {
+    object-fit: contain;
+    height: 30rem;
+    margin-left: 3rem;
+    margin-right: 0rem;
+}
+
+#grab__spot__btn {
+    background-color: #1a1a1a;
+    border-radius: 50px;
+    border: none;
+    font-size: 15px;
+    color: white;
+    padding: 0.7rem 0.8rem 0.7rem 0.8rem;
+    font-weight: 900;
+}
+
+#left__right__group {
+    width: 100vw;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+#left__section {
+    height: 50vh;
+    width: 30vw;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+#grab__spot__btn > img {
+    width: 1.5rem;
+    margin-left: 5px;
+}
+
+@media only screen and (min-width: 709px) and (max-width: 993px) {
+    #left__section > img {
+        object-fit: contain;
+        height: 30rem;
+        margin-left: 0rem;
+        margin-right: 0rem !important;
+    }
+    #right__Section {
+        margin-right: 0rem;
+    }
+    #grab__spot__btn {
+        margin-top: 0.9rem;
+    }
+    #left__section {
+        margin-top: 7rem;
+        margin-left: 3rem;
+        width: 200px;
+        display: flex;
+        height: 200px;
+        object-fit: fill;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 709px) {
+    #left__right__group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0;
+        margin-top: 6rem;
+    }
+    #left__section {
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+    }
+    #left__section {
+        margin-top: 5rem;
+
+        width: 200px;
+        display: flex;
+        height: 200px;
+        object-fit: fill;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    #left__section > img {
+        height: 50vh !important;
+        margin-left: 0;
+    }
+    #right__Section {
+        padding-top: 1.9rem;
+        text-align: center;
+    }
+    #grab__spot__btn {
+        margin-top: 1rem;
+    }
+    #right__Section__text > h1,
+    #right__Section__text > div > h1 {
+        text-align: left;
+        font-size: 2rem !important;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #left__right__group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0;
+        margin-top: 6rem;
+    }
+
+    #left__section {
+        margin-top: 3rem;
+
+        width: 50vw;
+        display: flex;
+        height: 200px;
+        object-fit: fill;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    #left__section > img {
+        height: 40vh !important;
+        margin-left: 0;
+    }
+    #right__Section {
+        padding-top: 0.1rem;
+        text-align: center;
+    }
+    #grab__spot__btn {
+        margin-top: 1rem;
+    }
+    #right__Section__text > h1,
+    #right__Section__text > div > h1 {
+        text-align: left;
+        font-size: 1.8rem !important ;
+    }
+}
+#background__img {
+    min-height: 100%;
+    min-width: 1024px;
+
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: 100%;
+    /* Set up positioning */
+    /* position: absolute; */
+    /* top: 0;
+    left: 0; */
+}

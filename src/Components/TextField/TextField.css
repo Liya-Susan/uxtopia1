@@ -1,0 +1,13 @@
+
+input,
+select {
+    width: 100%;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    outline: none;
+    color: rgb(161, 129, 129);
+    background: #333333 !important;
+    margin-bottom: 10px;
+}
+

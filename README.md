@@ -1,0 +1,9 @@
+# UXTOPIA WEBSITE
+
+## .env Configuration
+
+`FIREBASE_CONFIG` 
+
+`CREDENTIALS`
+
+`SPREADSHEET_ID`
